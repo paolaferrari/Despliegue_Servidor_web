@@ -8,12 +8,5 @@ pipeline {
       }
     }
 
-    stage('Crear Imagen ') {
-      steps {
-        sh 'sh script.sh'
-        echo 'Imagen Creada'
-      }
-    }
-
   }
 }
