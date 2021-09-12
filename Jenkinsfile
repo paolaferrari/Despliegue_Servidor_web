@@ -10,7 +10,6 @@ pipeline {
 
     stage('Crear Imagen ') {
       steps {
-        sh 'dos2unix script.sh'
         sh 'sh script.sh'
         echo 'Imagen Creada'
       }
