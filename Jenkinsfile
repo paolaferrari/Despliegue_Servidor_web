@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Primer paso') {
       steps {
-        echo 'primer paso'
+        echo 'Sincronizacion Git correcta.'
       }
     }
 
