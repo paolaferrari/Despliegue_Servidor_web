@@ -4,6 +4,7 @@ pipeline {
     stage('Sincronizacion') {
       steps {
         echo 'Sincronizacion Git correcta.'
+        input 'Esperando confirmacion manual'
       }
     }
 
