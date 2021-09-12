@@ -1,3 +1,14 @@
-este script permite ejecutar docker para crear la imagen debian 
-y a posterior de creado lo pone a correr para acceder desde la web
+#!/bin/bash
 
+echo "El directorio es : "
+cd /Sites/sarapico
+pwd
+
+echo "Usuario logeado como : "
+whoami
+
+#Creamos imagenes docker --> debian y sarapico 
+sudo docker build -t sarapico .
+
+#Creamos docker sarapico
+sudo docker run --rm -h sarapico.com -p  4000:80 sarapico
