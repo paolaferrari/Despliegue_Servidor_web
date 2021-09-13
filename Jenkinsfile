@@ -8,5 +8,11 @@ pipeline {
       }
     }
 
+    stage('Subiendo el Script') {
+      steps {
+        echo 'subiendo'
+      }
+    }
+
   }
 }
