@@ -2,6 +2,7 @@
 
 echo "El directorio es : "
 pwd
+cd /
 cd /home/Sites/sarapico
 pwd
 
