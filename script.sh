@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "El directorio es : "
-#cd /home/Sites/sarapico
+pwd
+cd /home/Sites/sarapico
 pwd
 
 #echo "Usuario logeado como : "
