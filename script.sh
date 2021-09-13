@@ -2,6 +2,8 @@
 
 echo "El directorio es : "
 pwd
+
+ssh devops@192.168.1.117 'bash -s' < script.sh
 cd /
 cd ~/Sites/sarapico
 pwd
