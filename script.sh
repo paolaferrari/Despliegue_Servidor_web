@@ -2,7 +2,6 @@
 
 echo "El directorio es : "
 pwd
-/sbin/ifconfig -a
 cd /
 cd ~/Sites/sarapico
 pwd
