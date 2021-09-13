@@ -3,7 +3,7 @@
 echo "El directorio es : "
 pwd
 cd /
-cd /home/Sites/sarapico
+cd ~/Sites/sarapico
 pwd
 
 #echo "Usuario logeado como : "
