@@ -6,10 +6,7 @@ pwd
 #ssh devops@192.168.1.117 'bash -s' < script.sh
 whoami
 
-ssh devops@192.168.1.118 /bin/bash <<'EOT'
-echo "These commands will be run on: $( uname -a )"
-echo "They are executed by: $( whoami )"
-EOT
+ssh devops@192.168.1.118 'bash -s' < script.sh
 
 cd ~/Sites/sarapico
 pwd
