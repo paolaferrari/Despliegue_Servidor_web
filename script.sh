@@ -6,7 +6,7 @@ pwd
 #ssh devops@192.168.1.117 'bash -s' < script.sh
 whoami
 
-ssh devops@192.168.1.117
+ssh devops@192.168.1.118
 cd ~/Sites/sarapico
 pwd
 
