@@ -11,8 +11,6 @@ pipeline {
     stage('Subiendo el Script') {
       steps {
         echo 'subiendo'
-        sh 'sh script2.sh'
-        sshCommand(command: 'ejecutaralgo', dryRun: true, sudo: true)
       }
     }
 
