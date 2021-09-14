@@ -2,14 +2,16 @@
 
 echo "El directorio es : "
 pwd
-
-#ssh devops@192.168.1.117 'bash -s' < script.sh
+echo "Usuario logeado como : "
 whoami
 
-ssh devops@192.168.1.118 
+#ssh devops@192.168.1.117 'bash -s' < script.sh
+#whoami
+
+#ssh devops@192.168.1.118 
 
 #cd ~/Sites/sarapico
-pwd
+#pwd
 
 #echo "Usuario logeado como : "
 #whoami
