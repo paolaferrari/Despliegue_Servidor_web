@@ -6,9 +6,9 @@ pwd
 #ssh devops@192.168.1.117 'bash -s' < script.sh
 whoami
 
-ssh devops@192.168.1.118 'bash -s' < script.sh
+ssh devops@192.168.1.118 
 
-cd ~/Sites/sarapico
+#cd ~/Sites/sarapico
 pwd
 
 #echo "Usuario logeado como : "
