@@ -3,8 +3,10 @@
 echo "El directorio es : "
 pwd
 
-ssh devops@192.168.1.117 'bash -s' < script.sh
-cd /
+#ssh devops@192.168.1.117 'bash -s' < script.sh
+whoami
+
+ssh devops@192.168.1.117
 cd ~/Sites/sarapico
 pwd
 
