@@ -12,7 +12,7 @@ pipeline {
       steps {
         echo 'subiendo'
         sh 'sh script2.sh'
-        sshCommand(command: 'sh script.sh', dryRun: true, sudo: true)
+        sshCommand(command: 'pwd', dryRun: true, sudo: true)
       }
     }
 
