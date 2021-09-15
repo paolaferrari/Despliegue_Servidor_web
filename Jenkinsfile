@@ -13,7 +13,7 @@ pipeline {
         echo 'subiendo'
         sh '''
 sshpass -p devops ssh devops@192.168.1.118'''
-        sh 'pwd'
+        sh 'sh script2.sh'
       }
     }
 
