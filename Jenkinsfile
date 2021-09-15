@@ -11,7 +11,7 @@ pipeline {
     stage('Subiendo el Script') {
       steps {
         echo 'subiendo'
-        sh 'sh script.sh'
+        sh 'sh script2.sh'
       }
     }
 
