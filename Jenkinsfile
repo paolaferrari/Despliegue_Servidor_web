@@ -11,7 +11,8 @@ pipeline {
     stage('Subiendo el Script') {
       steps {
         echo 'subiendo'
-        sh 'sh script2.sh'
+        sh '''sh 
+nohup /Sites/sarapico/script2.sh > run.log &'''
       }
     }
 
