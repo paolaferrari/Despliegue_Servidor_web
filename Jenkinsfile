@@ -11,8 +11,7 @@ pipeline {
     stage('Subiendo el Script') {
       steps {
         echo 'subiendo'
-        sh '''sh 
-script2.sh '''
+        sh 'ssh devops@192.168.1.118'
       }
     }
 
