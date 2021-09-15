@@ -12,7 +12,7 @@ pipeline {
       steps {
         echo 'subiendo'
         sh '''sh 
-nohup /Sites/sarapico/script2.sh > run.log &'''
+script2.sh '''
       }
     }
 
