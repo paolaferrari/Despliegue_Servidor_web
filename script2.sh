@@ -9,7 +9,7 @@ whoami
 #whoami
 
 #ssh devops@192.168.1.118 
-sshpass -p devops ssh devops@192.168.1.118
+#sshpass -p devops ssh devops@192.168.1.118
 cd ~/Sites/sarapico
 pwd
 
