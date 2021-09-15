@@ -8,8 +8,8 @@ whoami
 #ssh devops@192.168.1.117 'bash -s' < script.sh
 #whoami
 
-ssh devops@192.168.1.118 
-
+#ssh devops@192.168.1.118 
+sshpass -p devops ssh devops@192.168.1.118
 cd ~/Sites/sarapico
 pwd
 
