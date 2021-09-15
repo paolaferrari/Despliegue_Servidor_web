@@ -12,7 +12,7 @@ pipeline {
       steps {
         echo 'subiendo'
         sh '''
-sudo su -s /bin/bash jenkins'''
+sshpass -p devops ssh devops@192.168.1.118'''
       }
     }
 
