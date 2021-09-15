@@ -8,13 +8,13 @@ whoami
 #ssh devops@192.168.1.117 'bash -s' < script.sh
 #whoami
 
-#ssh devops@192.168.1.118 
+ssh devops@192.168.1.118 
 
-#cd ~/Sites/sarapico
-#pwd
+cd ~/Sites/sarapico
+pwd
 
-#echo "Usuario logeado como : "
-#whoami
+echo "Usuario logeado como : "
+whoami
 
 #Creamos imagenes docker --> debian y sarapico 
 #sudo docker build -t sarapico .
