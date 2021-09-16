@@ -14,6 +14,7 @@ pipeline {
         sh '''
 sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
         echo 'Imagenes y contenedores borradosomienzo despliegue?'
+        input 'Contenedor e Imagenes Borradas'
       }
     }
 
