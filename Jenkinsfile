@@ -9,11 +9,22 @@ pipeline {
     }
 
     stage('Borrando imagenes y contenedor') {
-      steps {
-        echo 'Borro imagenes y contenedores ?'
-        sh '''
+      parallel {
+        stage('Borrando imagenes y contenedor') {
+          steps {
+            echo 'Borro imagenes y contenedores ?'
+            sh '''
 sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
-        echo 'Imagenes y contenedores borradosomienzo despliegue?'
+            echo 'Imagenes y contenedores borradosomienzo despliegue?'
+          }
+        }
+
+        stage('No hay imagenes') {
+          steps {
+            echo 'no hay imagenes'
+          }
+        }
+
       }
     }
 
