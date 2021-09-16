@@ -8,18 +8,27 @@ pipeline {
       }
     }
 
-    stage('Subiendo el Script') {
+    stage('Borrando imagenes y contenedor') {
       steps {
-        echo 'subiendo'
+        echo 'Borro imagenes y contenedores ?'
         sh '''
-sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script2.sh'''
-        echo 'Imagenes y container generados.Comienzo despliegue?'
+sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
+        echo 'Imagenes y contenedores borradosomienzo despliegue?'
       }
     }
 
-    stage('desplegando') {
+    stage('Ejecutando el script') {
+      steps {
+        echo 'Comienzo a Ejecutar script?'
+        sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script2.sh'
+        echo 'Imagenes y Contenedores Generados'
+      }
+    }
+
+    stage('Desplegando') {
       steps {
         sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < scriptweb.sh'
+        echo 'Despliegue correcto'
       }
     }
 
