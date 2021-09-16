@@ -10,14 +10,14 @@ whoami
 
 #ssh devops@192.168.1.118 
 #sshpass -p devops ssh devops@192.168.1.118 'bash -s' < script2.sh
-cd ~/Sites/sarapico
+cd /home/devops/Sites/sarapico
 pwd
 
 echo "Usuario logeado como : "
 whoami
 
 echo "Creamos imagenes docker --> debian y sarapico" 
-#sudo /home/Sites/sarapico/
+
 docker build -t sarapico .
 
 #echo devops | sudo -S -u devops /home/Sites/sarapico/docker build -t sarapico .
