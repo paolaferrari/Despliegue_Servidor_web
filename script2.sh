@@ -18,7 +18,3 @@ docker build -t sarapico .
 
 echo "Creamos docker sarapico"
 docker run --rm  -h sarapico.com -p 33:22 -p  4000:80 sarapico
-
-sleep 30
-
-exit 1
