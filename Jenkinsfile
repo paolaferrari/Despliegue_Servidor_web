@@ -27,7 +27,7 @@ sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
 
     stage('Desplegando') {
       steps {
-        sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < firefox localhost:4000'
+        sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < firefox 192.168.1.118:4000'
         echo 'Despliegue correcto'
       }
     }
