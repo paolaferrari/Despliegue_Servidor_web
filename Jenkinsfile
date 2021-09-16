@@ -21,7 +21,7 @@ sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
     stage('Ejecutando el script') {
       steps {
         echo 'Comienzo a Ejecutar script?'
-        sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -d\' < script2.sh'
+        sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash\' < script2.sh'
         echo 'Imagenes y Contenedores Generados'
       }
     }
