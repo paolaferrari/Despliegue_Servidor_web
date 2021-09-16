@@ -18,7 +18,7 @@ sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script2.sh'''
 
     stage('desplegando') {
       steps {
-        sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < scriptweb.sh'
+        sh 'sh scriptweb.sh'
       }
     }
 
