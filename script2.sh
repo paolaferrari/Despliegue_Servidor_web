@@ -21,5 +21,5 @@ echo "Creamos Imagenes de docker --> debian y sarapico"
 docker build -t sarapico .
 
 
-echo "Creamos docker sarapico y desplegamos"
+echo "Creamos docker sarapico"
 docker run --rm -h sarapico.com -p 33:22 -p  4000:80 sarapico
