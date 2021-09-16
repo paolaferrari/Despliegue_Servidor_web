@@ -13,12 +13,13 @@ pipeline {
         echo 'subiendo'
         sh '''
 sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script2.sh'''
+        echo 'Imagenes y container generados.Comienzo despliegue?'
       }
     }
 
     stage('desplegando') {
       steps {
-        sh 'sh scriptweb.sh'
+        sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < scriptweb.sh'
       }
     }
 
