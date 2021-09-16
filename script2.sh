@@ -21,4 +21,4 @@ docker run --rm -d -h sarapico.com -p 33:22 -p  4000:80 sarapico
 
 #sleep 45
 
-exit
+return
