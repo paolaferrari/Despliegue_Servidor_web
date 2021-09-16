@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Sincronizacion') {
+    stage('Git sincronizar') {
       steps {
         echo 'Sincronizacion Git correcta.'
         input 'Esperando confirmacion manual'
@@ -18,7 +18,7 @@ sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
       }
     }
 
-    stage('Ejecutando el script') {
+    stage('Ejecutando script.sh') {
       steps {
         echo 'Comienzo a Ejecutar script?'
         sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash\' < script2.sh'
@@ -26,7 +26,7 @@ sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
       }
     }
 
-    stage('Desplegando') {
+    stage('Abrir navegador y web') {
       steps {
         sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < firefox 192.168.1.118:4000'
         echo 'Despliegue correcto'
