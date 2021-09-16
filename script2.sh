@@ -16,7 +16,7 @@ pwd
 echo "Usuario logeado como : "
 whoami
 
-echo "Creamos imagenes docker --> debian y sarapico" 
+echo "Creamos Imagenes de docker --> debian y sarapico" 
 
 docker build -t sarapico .
 
