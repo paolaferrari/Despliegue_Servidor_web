@@ -12,7 +12,7 @@ pipeline {
 
         stage('Copia archivos de Git') {
           steps {
-            sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < scriptWinaLin.sh'
+            sh 'sshpass -p 7854 ssh Johon@192.168.1.100 \'bash -s\' < scriptWinaLin.sh'
           }
         }
 
