@@ -12,7 +12,7 @@ pipeline {
 
         stage('Copia archivos de Git') {
           steps {
-            sh 'sshpass -p 7854 ssh Johon@192.168.1.100 \'bash -s\' < scriptWinaLin.sh'
+            sh 'sshpass -p 3072 ssh pao@192.168.56.103 \'bash -s\' < scriptWinaLin.sh'
           }
         }
 
@@ -23,7 +23,7 @@ pipeline {
       steps {
         echo 'Borro imagenes y contenedores ?'
         sh '''
-sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
+sshpass -p pao ssh pao@192.168.56.103 \'bash -s\' < script.sh'''
         echo 'Imagenes y contenedores borradosomienzo despliegue?'
         input 'Contenedor e Imagenes Borradas'
       }
@@ -32,7 +32,7 @@ sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
     stage('Ejecutando script.sh') {
       steps {
         echo 'Comienzo a Ejecutar script?'
-        sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash\' < script2.sh'
+        sh 'sshpass -p devops ssh pao@192.168.56.103 \'bash\' < script2.sh'
         echo 'Imagenes y Contenedores Generados'
         input 'Continuo ?'
       }
@@ -40,7 +40,7 @@ sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
 
     stage('Abrir navegador y web') {
       steps {
-        sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < firefox 192.168.1.118:4000'
+        sh 'sshpass -p pao ssh pao@192.168.56.1038 \'bash -s\' < firefox 192.168.56.103:4000'
         echo 'Despliegue correcto'
       }
     }
