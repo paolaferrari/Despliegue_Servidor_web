@@ -2,9 +2,20 @@ pipeline {
   agent any
   stages {
     stage('Git sincronizar') {
-      steps {
-        echo 'Sincronizacion Git correcta.'
-        input 'Esperando confirmacion manual'
+      parallel {
+        stage('Git sincronizar') {
+          steps {
+            echo 'Sincronizacion Git correcta.'
+            input 'Esperando confirmacion manual'
+          }
+        }
+
+        stage('Copia archivos de Git') {
+          steps {
+            sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < scriptWinaLin.sh'
+          }
+        }
+
       }
     }
 
@@ -23,6 +34,7 @@ sshpass -p devops ssh devops@192.168.1.118 \'bash -s\' < script.sh'''
         echo 'Comienzo a Ejecutar script?'
         sh 'sshpass -p devops ssh devops@192.168.1.118 \'bash\' < script2.sh'
         echo 'Imagenes y Contenedores Generados'
+        input 'Continuo ?'
       }
     }
 
