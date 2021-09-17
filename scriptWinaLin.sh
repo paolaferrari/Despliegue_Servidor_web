@@ -1,6 +1,6 @@
 #!/bin/bash 
 # Transferencia desde Git Local a Servidor Web remoto
-
+cd /home/devops/Sites/sarapico
 echo "El directorio es : "
 pwd
 echo "Usuario logeado como : "
