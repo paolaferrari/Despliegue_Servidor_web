@@ -22,8 +22,7 @@ pipeline {
     stage('Borrando imagenes y contenedor') {
       steps {
         echo 'Borro imagenes y contenedores ?'
-        sh '''
-sshpass -p pao ssh pao@192.168.56.103 \'bash -s\' < script.sh'''
+        sh 'script.sh'
         echo 'Imagenes y contenedores borradosomienzo despliegue?'
         input 'Contenedor e Imagenes Borradas'
       }
