@@ -1,16 +1,13 @@
 #!/bin/bash
-
+cd /home/pao/Sites/sarapico
 echo "El directorio es : "
 pwd
-echo "Usuario logeado como : "
-whoami
+
 
 #ssh devops@192.168.1.117 'bash -s' < script.sh
 #ssh devops@192.168.1.118 
 #sshpass -p devops ssh devops@192.168.1.118 'bash -s' < script2.sh
 
-cd /home/devops/Sites/sarapico
-pwd
 
 echo "Creamos Imagenes de docker --> debian y sarapico" 
 
