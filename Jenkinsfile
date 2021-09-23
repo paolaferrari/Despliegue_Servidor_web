@@ -19,7 +19,7 @@ pipeline {
     stage('Armando Imagenes y COntenedor') {
       steps {
         echo 'Comienzo a Ejecutar script?'
-        sh 'sshpass -p devops ssh pao@192.168.56.103 \'bash\' < script2.sh'
+        sh 'sshpass -p pao ssh pao@192.168.56.103 \'bash\' < script2.sh'
         echo 'Imagenes y Contenedores Generados'
         input 'Continuo ?'
       }
