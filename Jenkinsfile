@@ -7,9 +7,6 @@ pipeline {
             input 'Esperando confirmacion manual'
           }
         }
-
-       
-
     stage('Borrando imagenes y contenedor') {
       steps {
         echo 'Borro imagenes y contenedores ?'
