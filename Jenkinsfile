@@ -26,6 +26,6 @@ pipeline {
         echo 'Imagenes y Contenedores Generados'
         input 'Continuo ?'
       }
-  
+    }  
 
   
